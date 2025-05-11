@@ -36,7 +36,13 @@ app.put('/professores', (req, res) => {
   res.send('A requisição PUT para professores/ chegou: '+req.body.codigo);
 })
 
-app.delete('/professores', (req, res) => {
+app.get('/professores/:_id', (req, res) => {
+  console.log(req.body);
+  res.send('A requisição GET para professores/ chegou: '+req.body.codigo);
+})
+
+
+app.delete('/professores/:_id', (req, res) => {
   console.log(req.body);
   res.send('A requisição DELETE para professores/ chegou: '+req.body.codigo);
 })
@@ -59,7 +65,12 @@ app.put('/cursos', (req, res) => {
   res.send('A requisição PUT para cursos/ chegou: '+req.body.codigo);
 })
 
-app.delete('/cursos', (req, res) => {
+app.get('/cursos/:_id', (req, res) => {
+  console.log(req.body);
+  res.send('A requisição PUT para cursos/ chegou: '+req.body.codigo);
+})
+
+app.delete('/cursos/:_id', (req, res) => {
   console.log(req.body);
   res.send('A requisição DELETE para cursos/ chegou: '+req.body.codigo);
 })

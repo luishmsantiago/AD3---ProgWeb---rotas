@@ -8,7 +8,7 @@ function createFooter() {
     <p>Professor: Rafael Speroni</p>
     <p>Aluno: Luis Henrique</p>
     <a href="https://crud-prof-web.vercel.app/" class="logo-vercel" target="_blank">
-      Acesse a atividade 2 pela Vercel
+      Acesse a atividade pela Vercel
     </a>
 
     `;
